@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+           form {
+                text-align: center;
+                border-radius: 25px;
+            }
+            #container {
+              display: flex;
+              flex-wrap: wrap;
+            }
+
+            #container > .topLeft {
+              position: absolute;
+              top: 10px;
+              left: 10px;
+              width: 20% auto;
+              display: flex;
+            }
+
+            #container > #BannerBar {
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              height: 30px;
+              display: flex;
+              background: #f1f1f1;
+              width: 100%;
+            }
+            #container > #AdvancedSearch {
+              position: absolute;
+              top: 30px;
+              left: 15px;
+              font-family: arial,sans-serif;
+              font-size:10px
+            }
+            #container > #Title {
+              position: absolute;
+              top: 70px;
+              font-family: arial,sans-serif;
+              font-size:7px;
+              left: 15px;
+            }
+
+            #container > #LeftWords {
+              position: absolute;
+              top: 90px;
+              font-family: arial,sans-serif;
+              font-size:7px;
+              left: -20px;
+            }
+          #LeftWords > ul li{
+              list-style: none;
+              height: 20px;
+            }
+            #optionbox {
+                height: 8px;
+                width : 150px;
+                
+              }
+        </style>
+    </head>
+    <body>
+      <div id="container">
+        <div id="BannerBar"></div>
+        <div id="AdvancedSearch">
+          <p style="color: #d93025">
+            Advanced Search
+            <hr size="px" width="410%" color="#ebebeb">
+          </p>
+        </div>
+        <div id="Title">
+        <p> Find pages with...</p>
+        </div>
+        <div id="LeftWords">
+        <ul >
+          <li>all these words:
+            <input type="tel" id="optionbox" name="cardnumber"></li>
+          <li> this exact word or phrase:
+            <input type="tel" id="optionbox" name="cardnumber"></li>
+          <li> none of these word:
+            <input type="tel" id="optionbox" name="cardnumber"></li>
+          <li> numbers ranging from:
+             <input type="tel" id="optionbox" name="cardnumber">
+             to <input type="tel" id="optionbox" name="cardnumber"></li>
+        </ul>
+
+       </div>
+          <img src="/Users/emmanuelhernandez/Desktop/HTMLProjects/googlelogo.jpg"
+          alt="Google" width="40" class="topLeft">
+        </div>
+
+
+    </body>
+</html>
